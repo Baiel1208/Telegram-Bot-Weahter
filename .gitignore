@@ -2,3 +2,6 @@ venv
 my_books.py
 a.py
 GitHub.txt
+.env
+audio/
+video/

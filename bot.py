@@ -1,6 +1,12 @@
 from aiogram import Bot,Dispatcher,types,executor
+from dotenv import load_dotenv
+import os
 
-bot = Bot("6264543307:AAF6wZgO9AnTs239BJ52Z_K_GJRjgtLbF-U")
+load_dotenv('.env')
+# print(os.environ.get('token'))
+
+bot = Bot(os.environ.get('token'))
+
 dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['start', 'go'])
